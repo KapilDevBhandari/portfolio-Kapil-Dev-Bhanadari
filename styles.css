@@ -747,11 +747,13 @@ section {
     aspect-ratio: 16/9;
 }
 
-.video-wrapper video {
+.video-wrapper video,
+.video-wrapper iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+    border: none;
 }
 
 .video-overlay {
