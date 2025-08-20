@@ -59,7 +59,7 @@ window.addEventListener('scroll', () => {
 
 // Mobile Menu Toggle
 hamburger.addEventListener('click', () => {
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    navLinks.classList.toggle('active');
     hamburger.classList.toggle('active');
 });
 
@@ -120,7 +120,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
             // Close mobile menu if open
             if (window.innerWidth <= 768) {
-                navLinks.style.display = 'none';
+                navLinks.classList.remove('active');
                 hamburger.classList.remove('active');
             }
         }
